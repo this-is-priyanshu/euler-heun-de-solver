@@ -8,4 +8,4 @@ This project is a web-based tool for solving differential equations of 1st order
 ### Technologies Used
 - **HTML, CSS**: For the web interface
 - **JavaScript**: For implementing the numerical methods
-- **Plotly.js**: For graph plotting
+- **Plotly.js**: For plotting the solution graph
