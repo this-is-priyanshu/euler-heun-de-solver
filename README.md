@@ -1,4 +1,4 @@
-# Differential Equation Solver
+# Differential Equation Solver using Euler's & Heun's method
 This project is a web-based tool for solving differential equations of 1st order using Euler's method and Heun's method.
 ### Features
 - User can choose between Euler's and Heun's method
@@ -9,3 +9,4 @@ This project is a web-based tool for solving differential equations of 1st order
 - **HTML, CSS**: For the web interface
 - **JavaScript**: For implementing the numerical methods
 - **Plotly.js**: For plotting the solution graph
+###### Note: It is recommended to open this project on a computer, as the interface may get distorted on a smartphone/tablet screen.
