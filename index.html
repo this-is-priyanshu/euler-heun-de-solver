@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Differential Equation Solver</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Differential Equation Solver</h1>
+        <form id="form">
+            <label for="method">Choose the method you want to use:</label>
+            <select name="method" id="method" required>
+                <option value="na">(Choose a method)</option>
+                <option value="euler">Euler's method</option>
+                <option value="heun">Improved Euler's method (Heun's method)</option>
+            </select>
+            <br>
+            <br>
+            <label for="equation">Enter the equation: dy/dx =</label>
+            <input type="text" id="equation" name="equation">
+            <p>* The equation must be of the type <i>dy/dx = f (x, y)</i></p>
+            <br>
+            <label for="x0">Enter value of x<sub>0</sub>:</label>
+            <input type="text" id="x0" name="x0">
+            <br>
+            <br>
+            <label for="y0">Enter value of y<sub>0</sub> (i.e. value of function y at x = x<sub>0</sub>):</label>
+            <input type="text" id="y0" name="y0">
+            <br>
+            <br>
+            <label for="xn">Enter value of x<sub>n</sub>:</label>
+            <input type="text" id="xn" name="xn">
+            <br>
+            <br>
+            <label for="step">Enter step value h:</label>
+            <input type="text" id="step" name="step">
+            <br>
+            <br>
+            <button type="submit">Solve Equation</button>
+        </form>
+
+        <h3 id="tableTitle1" style="text-align: center; display: none;">Table for Euler's method</h3>
+        <div id="results1" style="display: none;">
+            <table id="resultTable1" border="1">
+                <thead id="tableHead1">
+                    <tr>
+                        <th>Step (n)</th>
+                        <th>x<sub>n</sub></th>
+                        <th>y<sub>n</sub></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody1"></tbody>
+            </table>
+        </div>
+
+        <h3 id="tableTitle2" style="text-align: center; display: none;">Table for Heun's method</h3>
+        <div id="results2" style="display: none;">
+            <table id="resultTable2" border="1">
+                <thead id="tableHead2">
+                    <tr>
+                        <th>Step (n)</th>
+                        <th>x<sub>n</sub></th>
+                        <th>y<sub>n</sub></th>
+                        <th>Iterations</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody2"></tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+
+        <div id="conclusion"></div>
+        <br>
+        <br>
+
+        <div id="graph"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    background-color: beige;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#conclusion {
+    text-align: left;
+    font-size: large;
+}
+
+p {
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button {
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 10px 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0;
+    width: 200px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid;
+}
